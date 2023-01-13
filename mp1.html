@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="photo/dick.png">
+    <link rel="stylesheet" href="test.css">
+    <title>Dick Hardware</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'tahoma';
+            background-image: url('photo/background.jpg');
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+
+        #navwithlogo {
+            background-color: white;
+
+        }
+
+        #navwithsearch {
+            background-color: rgb(211, 222, 226);
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+
+
+        #homepage :hover {
+            color: rgb(13, 90, 233);
+
+        }
+
+        .dropbtn {
+            background-color: rgb(143, 177, 240);
+            border: 1px solid;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(143, 177, 240);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: rgb(143, 177, 240);
+        }
+
+        .btn {
+            border: 1px solid;
+            border-collapse: collapse;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg" id="navwithlogo">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="#"><img src="photo/dick.png" style="width: 100px" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="homepage">
+
+                        <li class="nav-item">
+                            <a class="nav-link  active btn nav__btn btn-fnt btn-color"" aria-current=" page"
+                                href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn nav__btn btn-fnt btn-color" href="#">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
+                                aria-disabled="true">Bulk Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link btn nav__btn btn-fnt btn-color" href=" #">Promo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Franchise Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Invest</a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="ms-5">
+                        <a href="#">Signup <i class="fa fa-user-plus" aria-hidden="true"></i></a>
+                        <a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg" id="navwithsearch">
+            <div class="container">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Shop by Categories</button>
+                            <div class="dropdown-content">
+                                <a href="#">Concreting and Masonry</a>
+                                <a href="#">Rebar & G.I WIres</a>
+                                <a href="#">Steel</a>
+                                <a href="#">Roofing and Insulation</a>
+                                <a href="#">WaterProofing</a>
+                                <a href="#">Sealant & Adhesives</a>
+                                <a href="#">Glassdoors & Windows</a>
+                                <a href="#">Wood Products</a>
+                                <a href="#">Drywall & Ceiling</a>
+                                <a href="#">Plumbing Pipes & Accessories</a>
+                                <a href="#">Electrical Pipes & Accessories</a>
+                                <a href="#">Wires & Cables</a>
+                                <a href="#">Tiling & Supplies</a>
+                                <a href="#">Painting Supplies</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="ms-5"><input class="form-control me-2 mt-2" type="search"
+                            placeholder="Search Products Here" aria-label="Search" />
+                    </li>
+                    <li><button class="btn btn-outline mt-2" type="submit">
+                            <img src="photo/searchbar.png" style="width:25px">
+                        </button></li>
+                </ul>
+                <div class="ms-5">
+                    <a href="#">Be a Seller </a>|
+                    <a href="#">FAQs </a> |
+                    <a href="#">Tracking</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-9"> <img src="photo/cover.png" class="img-fluid"></div>
+
+            <div class="col-3 mt-3" id="pSlider">
+                <h1 class="text-center bg-light">Our Best Seller</h1>
+                <ol id="slider-container" dir="ltr">
+                    <li id="slide_1" class="li_slide">
+                        <div class="slide-snapper"></div>
+                        <a class="prev_slide" href="#slide_5"></a> <a class="next_slide" href="#slide_2"></a>
+                    </li>
+                    <li id="slide_2" class="li_slide">
+                        <div class="slide-snapper"></div>
+                        <a class="prev_slide" href="#slide_1"></a> <a class="next_slide" href="#slide_3"></a>
+                    </li>
+                    <li id="slide_3" class="li_slide">
+                        <div class="slide-snapper"></div>
+                        <a class="prev_slide" href="#slide_2"></a> <a class="next_slide" href="#slide_4"></a>
+                    </li>
+                    <li id="slide_4" class="li_slide">
+                        <div class="slide-snapper"></div>
+                        <a class="prev_slide" href="#slide_3"></a> <a class="next_slide" href="#slide_5"></a>
+                    </li>
+                    <li id="slide_5" class="li_slide">
+                        <div class="slide-snapper"></div>
+                        <a class="prev_slide" href="#slide_4"></a> <a class="next_slide" href="#slide_1"></a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+</body>
+
+</html>
