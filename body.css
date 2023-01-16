@@ -1,10 +1,13 @@
 body {
     margin: 0px;
     font-family: 'tahoma';
-    background-image: url('photo/background.jpg');
+    background-image: url('photo/background.jpg') disable;
+    background-color: #F2EEE9;
     background-attachment: fixed;
     background-size: 100%;
+
 }
+
 
 #navwithlogo {
     background-color: white;
@@ -79,4 +82,104 @@ body {
 #shop-nav {
     background-color: rgba(240, 236, 231, 0.3);
 
+}
+
+#itempage {
+    border: 205px solid;
+    border-collapse: collapse;
+    background: red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+
+.form-container {
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.register {
+    width: 300px;
+    height: 350px;
+    background: rgb(149, 0, 255);
+    background: grey;
+    background-size: 300%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    animation: bg-animation 5s infinite alternate;
+}
+
+
+.title {
+    text-align: center;
+    padding: 15px;
+    padding-top: 20px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.black {
+    color: black;
+}
+
+.form {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #cac9d4;
+    color: black;
+}
+
+
+
+.dark-btn {
+    background-color: #0077b6;
+}
+
+.login {
+    width: 300px;
+    height: 350px;
+    background-color: lightblue;
+
+    border-radius: 50px;
+
+    position: absolute;
+    top: 280px;
+    transition: 0.3s ease-out;
+
+}
+
+.login:hover {
+    top: 70px;
+    border-radius: 10px;
+}
+
+.login:hover+.register-hover {
+    font-size: 20px;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }

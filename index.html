@@ -12,104 +12,138 @@
     <link rel="icon" type="image/x-icon" href="photo/dick.png">
     <link rel="stylesheet" href="featured.css">
     <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="asd.css">
+    <link rel="stylesheet" href="promo.css">
     <title>Dick Hardware</title>
 </head>
 
 <body>
-    <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg" id="navwithlogo">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="#"><img src="photo/dick.png" style="width: 70px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="homepage">
+    <nav class="navbar navbar-expand-lg sticky-top" id="navwithlogo">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="photo/dick.png" style="width: 50px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="homepage">
 
-                        <li class="nav-item">
-                            <a class="nav-link  active btn nav__btn btn-fnt btn-color"" aria-current=" page"
-                                href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn nav__btn btn-fnt btn-color" href="#">Shop</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active btn nav__btn btn-fnt btn-color"" aria-current=" page"
+                            href="#home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#shoplink">Shop</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
-                                aria-disabled="true">Bulk Order</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#Bulk-orders">Bulk Order</a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link btn nav__btn btn-fnt btn-color" href=" #">Promo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn nav__btn btn-fnt btn-color" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn nav__btn btn-fnt btn-color" href="#">Franchise Business</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn nav__btn btn-fnt btn-color" href="#">Invest</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#promopage">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
+                            aria-disabled="true">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
+                            aria-disabled="true">Franchise Business</a>
+                    </li>
 
+                </ul>
 
-                    </ul>
+                <div class="ms-5">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a href="#">Signup <i class="fa fa-user-plus" aria-hidden="true"></i>/Login <i
+                                class="fa fa-user" aria-hidden="true"></i></a>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sign in / Register</h5>
+                                </div>
+                                <div class="modal-body" style="height: 450px;">
+                                    <div class='form-container'>
+                                        <div class='register'>
+                                            <h2 class='title register-hover'>Register</h2>
+                                            <form action="" class='form'>
+                                                <input type="text" id="username" name="uname" placeholder="Username">
+                                                <input type="email" id="email" name="email" placeholder="Email">
+                                                <input type="password" id="password" name="password"
+                                                    placeholder="Password">
+                                                <p><button class='btn'>Register</button></p>
+                                            </form>
+                                        </div>
 
-                    <div class="ms-5">
-                        <a href="#">Signup <i class="fa fa-user-plus" aria-hidden="true"></i></a>
-                        <a href="#">Login <i class="fa fa-user" aria-hidden="true"></i></a>
+                                        <div class='login ustom-shape-divider-top-1671103609'>
+
+                                            <h2 class='title black'>Log in</h2>
+                                            <form action="" class='form'>
+                                                <input type="text" id="username" name="uname" placeholder="Username">
+                                                <input type="password" id="password" name="password"
+                                                    placeholder="Password">
+                                                <p><button class='btn dark-btn'>Login</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg" id="navwithsearch">
-            <div class="container">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Shop by Categories</button>
-                            <div class="dropdown-content">
-                                <a href="#">Concreting and Masonry</a>
-                                <a href="#">Rebar & G.I WIres</a>
-                                <a href="#">Steel</a>
-                                <a href="#">Roofing and Insulation</a>
-                                <a href="#">WaterProofing</a>
-                                <a href="#">Sealant & Adhesives</a>
-                                <a href="#">Glassdoors & Windows</a>
-                                <a href="#">Wood Products</a>
-                                <a href="#">Drywall & Ceiling</a>
-                                <a href="#">Plumbing Pipes & Accessories</a>
-                                <a href="#">Electrical Pipes & Accessories</a>
-                                <a href="#">Wires & Cables</a>
-                                <a href="#">Tiling & Supplies</a>
-                                <a href="#">Painting Supplies</a>
-                            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg" id="navwithsearch">
+        <div class="container">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Shop by Categories</button>
+                        <div class="dropdown-content">
+                            <a href="#">Concreting and Masonry</a>
+                            <a href="#">Rebar & G.I WIres</a>
+                            <a href="#">Steel</a>
+                            <a href="#">Roofing and Insulation</a>
+                            <a href="#">WaterProofing</a>
+                            <a href="#">Sealant & Adhesives</a>
+                            <a href="#">Glassdoors & Windows</a>
+                            <a href="#">Wood Products</a>
+                            <a href="#">Drywall & Ceiling</a>
+                            <a href="#">Plumbing Pipes & Accessories</a>
+                            <a href="#">Electrical Pipes & Accessories</a>
+                            <a href="#">Wires & Cables</a>
+                            <a href="#">Tiling & Supplies</a>
+                            <a href="#">Painting Supplies</a>
                         </div>
-                    </li>
-                    <li class="ms-5"><input class="form-control me-2 mt-2" type="search"
-                            placeholder="Search Products Here" aria-label="Search" />
-                    </li>
-                    <li><button class="btn btn-outline mt-2" type="submit">
-                            <img src="photo/searchbar.png" style="width:25px">
-                        </button></li>
-                </ul>
-                <div class="ms-5">
-                    <a href="#">Be a Seller </a>|
-                    <a href="#">FAQs </a> |
-                    <a href="#">Tracking</a>
-                </div>
+                    </div>
+                </li>
+                <li class="ms-5"><input class="form-control me-2 mt-2" type="search" placeholder="Search Products Here"
+                        aria-label="Search" />
+                </li>
+                <li><button class="btn btn-outline mt-2" type="submit">
+                        <img src="photo/searchbar.png" style="width:25px">
+                    </button></li>
+            </ul>
+            <div class="ms-5">
+                <a href="#FAQs">FAQs </a> |
+                <a href="#Tracking">Tracking</a> |
+                <a href="#">Contact us </a>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
+
     <div class="container mt-5">
         <div class="row">
 
-            <div class="col-9"> <img src="photo/cover.png" class="img-fluid"></div>
+            <div class="col-9"> <img src="photo/cover.png" class="img-fluid" id="home-link"></div>
 
             <div class="col-3 mt-3" id="pSlider">
-                <h1 class="text-center bg-light">Featured Items</h1>
+                <h1 class="text-center">Featured Items</h1>
                 <ol id="slider-container" dir="ltr">
                     <li id="slide_1" class="li_slide">
                         <div class="slide-snapper"></div>
@@ -184,123 +218,312 @@
                 </table>
             </div>
         </div>
-        <h1 CLASS=" mt-5">ITEM SHOP</h1>
-        <nav class="navbar" id="shop-nav">
-            <div class="container-fluid">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="shop">
-                    <li class="nav-item">
-                        <p><strong>1069</strong> products found</p>
-                    </li>
-                    <li class="nav-item">
-                    </li>
-                </ul>
-                <select name="dropdown">
-                    <option>Sort by</option>
-                    <option value="Popularity">Sort by Popularity</option>
-                    <option value="married">Latest</option>
-                    <option value="separated">Price low to high</option>
-                    <option value="separated">Price high to low</option>
-                </select>
-            </div>
-        </nav>
+        <div>
+            <h1 CLASS=" mt-5 pt-5" id="shoplink">ITEM SHOP</h1>
+            <nav class="navbar" id="shop-nav">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="shop">
+                        <li class="nav-item">
+                            <p><strong>100</strong> products found</p>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                    <select name="dropdown">
+                        <option>Sort by</option>
+                        <option value="Popularity">Sort by Popularity</option>
+                        <option value="married">Latest</option>
+                        <option value="separated">Price low to high</option>
+                        <option value="separated">Price high to low</option>
+                    </select>
+                </div>
+            </nav>
 
-        <div class="container-parent">
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
-            </div>
-            <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5">
-                <img src="photo/Galvanized-wire.png" alt="library" width="180px">
-                <div class="desc">Galvanized-wire</div>
-                <button type="submit" class="btn btn-primary">Add to cart</button>
+            <div class="container-parent">
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
+                    <img src="items/1.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>GI wire</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
+                    <img src="items/2.png" alt="library" width="180px" height="145px">
+                    <div class="desc">
+                        <h5>Hammer drill</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
+                    <img src="items/3.png" alt="library" width="180px" height="145px">
+                    <div class="desc">
+                        <h5>Regular Hammer</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
+                    <img src="items/4.png" alt="library" width="180px" height="145px">
+                    <div class="desc">
+                        <h5>Spray Paint</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-5 mt-5">
+                    <img src="items/5.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Measuring Tape</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color ">
+                    <img src="items/6.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Door knob</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color ">
+                    <img src="items/7.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Angle Grinder</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color ">
+                    <img src="items/8.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Ladder Fiberglass</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color ">
+                    <img src="items/9.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Silicone Sealant</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="gallery me-5 btn nav__btn btn-fnt btn-color ">
+                    <img src="items/10.png" alt="library" width="180px">
+                    <div class="desc">
+                        <h5>Paint brush</h5>
+                        <p>₱100</p>
+                    </div>
+                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                </div>
+                <div class="pagination-wrapper">
+                    <div class="pagination">
+                        <a class="prev page-numbers" href="javascript:;">prev</a>
+                        <span aria-current="page" class="page-numbers current">1</span>
+                        <a class="page-numbers" href="javascript:;">2</a>
+                        <a class="page-numbers" href="javascript:;">3</a>
+                        <a class="page-numbers" href="javascript:;">4</a>
+                        <a class="page-numbers" href="javascript:;">5</a>
+                        <a class="page-numbers" href="javascript:;">6</a>
+                        <a class="page-numbers" href="javascript:;">7</a>
+                        <a class="page-numbers" href="javascript:;">8</a>
+                        <a class="page-numbers" href="javascript:;">9</a>
+                        <a class="page-numbers" href="javascript:;">10</a>
+                        <a class="next page-numbers" href="javascript:;">next</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="container text-center mt-5 pt-5 mb-5 pb-5" id="Bulk-orders">
+        <h1>Bulk Orders? List your items and get the best deals online!</h1>
+        <form class="mt-5">
+            <label for="Full name">Full name*</label><br />
+            <input class="mb-3" type="text" placeholder="Enter Name" id="Full name" /><br />
+            <label for="email">Email* </label><br />
+            <input class="mb-3" type="email" placeholder="Enter Email" id="email"><br />
+            <label for="Contact number">Contact number(mobile)* </label><br />
+            <input class="mb-3" type="text" placeholder="ex. 09123456789" " id=" Contact number" /><br />
+            <label>Products/Quotations * </label><br />
+            <textarea placeholder="Orders" style=" width:700px"></textarea><br />
+            <input type="button" value="Submit"></input>
+        </form>
+        <h1 class="pt-5">Contact Us For Any Questions</h1>
+        <div class="row pt-5">
+            <div class="col-4"><strong>Contact Directly</strong></div>
+            <div class="col-4"><strong>Location</strong></div>
+            <div class="col-4"><strong>Customer Support</strong></div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-4">Globe: +639957615913</div>
+            <div class="col-4">Tumbaga 1, purok4, Sariaya Quezon</div>
+            <div class="col-4">support@DickHardware.ph</div>
+            <div class="col-4">TNT: +639075995991</div>
+        </div>
+    </div>
+    <div class="promo-wrap" id="promopage">
+        <div class="container">
+            <div class="promo-title">
+                <h1>current deals</h1>
+                <p>Until Supplies Last</p>
+            </div>
+            <div class="promo-list">
+                <div class="promo-template">
+                    <div class="promo-image text-center">
+                        <img src="promopage/1.png" alt="Breaker" style="width: 300px;" />
+                    </div>
+                    <div class="promo-description">
+                        <span class="promo-number">01</span>
+                        <p class="promo-name">Makita AC Breaker</p>
+                        <p class="promo-price">49,000 <span>55,000</span></p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
 
+                <div class="promo-template">
+                    <div class="promo-image">
+                        <img src="promopage/2.png" alt="saw" />
+                    </div>
+                    <div class="promo-description">
+                        <span class="promo-number">02</span>
+                        <p class="promo-name">Makita AC Circular Saw</p>
+                        <p class="promo-price">7,350 <span>7,850</span></p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
 
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
+                <div class="promo-template">
+                    <div class="promo-image text-center">
+                        <img src="promopage/3.png" alt="xa3" style="width: 300px;" />
+                    </div>
+                    <div class="promo-description">
+                        <span class="promo-number">03</span>
+                        <p class="promo-camera">xa3</p>
+                        <p class="promo-name">Makita AC demolition Hammer</p>
+                        <p class="promo-price">16,250 <span>19,750</span></p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left: 50px;">
+                <h3>We also Offer</h3>
+                <p style="color: grey;">Contractor’s Promo – Send your credentials as contractor and get a special deal
+                    everytime you order.</p>
+                <p style="color: grey;">Corporate’s Promo – Send credentials of your company and get a special deal
+                    everytime you order.</p>
+                <p style="color: grey;">Professionals Promo – Architect or Engineer? Send us your PRC id and get a
+                    special
+                    deal everytime you
+                    order.</p>
+                <p style="color: grey;">Send your credentials via Facebook Messenger here <a
+                        href="https://www.messenger.com/t/578795522295947">[Message Us]</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="FAQs">
+        <h1>Frequently Asked Question</h1>
+        <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        Where are you located?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We are located in Tumbaga 1, purok4, Sariaya Quezon!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        What times are you open?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We are Open from 8:00AM-5:00PM Monday-Saturday, 8:00 AM - 12:00NN Sunday and holidays.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+                        How do I place an order?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        1. Search for the item you wish to buy. </br>
+                        2. After spotting the item you like, tap Add to Cart to store the item in your cart.</br>
+                        3. Once finalized, click the cart icon to view items on Cart and click Proceed to Checkout.</br>
+                        4. Input a voucher code (if you have one), your delivery option and address, and your payment
+                        method.</br>
+                        5. After reviewing your order, tap on Place Order to process your order.</br>
+                        6. A confirmation will appear once the order has been successfully placed.</br>
+                        7. You should receive an e-mail confirming your order within a couple of hours. Use the Order
+                        Number in the confirmation e-mail to track your order.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsefour">
+                            How long will it take to deliver my order?
+                        </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It will take 1 to 7 business days to delivery your order depending on item size,
+                            availability and location.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5" style="margin-left:auto; margin-right:auto;" id="Tracking">
+            <p>To track your order please enter your Order ID in the box below and press the "Track"</br> button. This
+                was given to you on your receipt and in the confirmation email you should</br> have received.
+            </p>
+            <p class="form-row form-row-first"><label for="orderid">Order ID</label></br> <input class="input-text"
+                    type="text" name="orderid" id="orderid" value=""
+                    placeholder="Found in your order confirmation email." style="width: 300px;">
+            </p>
+            <p class="form-row form-row-last"><label for="order_email">Billing email</label> </br>
+                <input class="input-text" type="text" name="order_email" id="order_email" value=""
+                    placeholder="Email you used during checkout." style="width: 300px">
+            </p>
+            <p class=" form-row"><button type="submit" class="button" name="track" value="Track">Track</button>
+            </p>
+        </div>
+    </div>
+    <footer class="mt-5" style="background-color: rgb(192, 188, 188);">
+        <div class="container">
+            <strong>Contact Us</strong>
+            <p class="text-center mt-5">
+                DickHardware@gmail.com | 09075995991
+            </p>
+        </div>
+        <div class="row mb-5">
+            <div class="text-center">
+                <a href="https://www.facebook.com/" target="_blank"><img src="fb.png" style="width: 30px" /></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" style="width: 30px" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" style="width: 30px" /></a>
+                <a href="https://www.pinterest.ph" target="_blank"><img src="pint.png" style="width: 30px" /></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" style="width: 30px" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" style="width: 30px" /></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
