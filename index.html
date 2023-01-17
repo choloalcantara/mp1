@@ -12,135 +12,131 @@
     <link rel="icon" type="image/x-icon" href="photo/dick.png">
     <link rel="stylesheet" href="featured.css">
     <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="asd.css">
+    <link rel="stylesheet" href="pagination.css">
     <link rel="stylesheet" href="promo.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="about.css">
     <title>Dick Hardware</title>
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg sticky-top" id="navwithlogo">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#"><img src="photo/dick.png" style="width: 50px" /></a>
+            <a class="navbar-brand ms-5" href="#"><img src="photo/banner.jpg" style="width: 180px" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="homepage">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="homepage" style="padding-top: 20px;">
+                    <li>
+                        <div class="nav-item dropdown">
+                            <button class="dropbtn">Shop by Categories</button>
+                            <div class="dropdown-content">
+                                <a href="#">Concreting and Masonry</a>
+                                <a href="#">Rebar & G.I WIres</a>
+                                <a href="#">Steel</a>
+                                <a href="#">Roofing and Insulation</a>
+                                <a href="#">WaterProofing</a>
+                                <a href="#">Sealant & Adhesives</a>
+                                <a href="#">Glassdoors & Windows</a>
+                                <a href="#">Wood Products</a>
+                                <a href="#">Drywall & Ceiling</a>
+                                <a href="#">Plumbing Pipes & Accessories</a>
+                                <a href="#">Electrical Pipes & Accessories</a>
+                                <a href="#">Wires & Cables</a>
+                                <a href="#">Tiling & Supplies</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current=" page" href="#home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#shoplink">Shop</a>
+                    </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  active btn nav__btn btn-fnt btn-color"" aria-current=" page"
-                            href="#home-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#shoplink">Shop</a>
+                        <a class="nav-link " href="#Bulk-orders">Bulk Order</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#Bulk-orders">Bulk Order</a>
+                        <a class="nav-link " href="#aboutpage">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href=" #" tabindex="-1" aria-disabled="true">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled " href=" #" tabindex="-1" aria-disabled="true">Franchise
+                            Business</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link btn nav__btn btn-fnt btn-color" href="#promopage">Promo</a>
+                    <li class="ms-5"><input class="form-control me-2 mt-2" type="search"
+                            placeholder="Search Products Here" aria-label="Search" />
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
-                            aria-disabled="true">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled btn nav__btn btn-fnt btn-color"" href=" #" tabindex="-1"
-                            aria-disabled="true">Franchise Business</a>
-                    </li>
+                    <li><button class="btn btn-outline mt-2" type="submit">
+                            <img src="photo/searchbar.png" style="width:25px">
+                        </button></li>
                 </ul>
+                <div class="ms-5">
+                    <a href="#FAQs">FAQs </a> |
+                    <a href="#Tracking">Tracking</a> |
+                    <a href="#footer">Contact us </a>
+                </div>
 
-                <div class="ms-5" style="margin-right: 100px;">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown">
-                            <a href="#modal" class="button">Signup <i class="fa fa-user-plus"
-                                    aria-hidden="true"></i>/Login <i class="fa fa-user" aria-hidden="true"></i></a>
+                <div class="ms-5" style="margin-right: 150px;">
+                    <section id="intro">
 
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">
-                                    <div class='form-container'>
-                                        <div class='register'>
-                                            <h2 class='title register-hover'>Register</h2>
-                                            <form action="" class='form'>
-                                                <input type="text" id="username" name="uname" placeholder="Username">
-                                                <input type="email" id="email" name="email" placeholder="Email">
-                                                <input type="password" id="password" name="password"
-                                                    placeholder="Password">
-                                                <p><button class='btn'>Register</button></p>
-                                            </form>
-                                        </div>
-                                        <div class='login ustom-shape-divider-top-1671103609'>
+                        <section id="intro">
 
-                                            <h2 class='title black'>Log in</h2>
-                                            <form action="" class='form'>
-                                                <input type="text" id="username" name="uname" placeholder="Username">
-                                                <input type="password" id="password" name="password"
-                                                    placeholder="Password">
-                                                <p><button class='btn dark-btn'>Login</button></p>
-                                        </div>
-                                    </div>
-                                </a></li>
-                        </ul>
-                    </div>
+                            <div>
+                                <a href="#modal" class="button">Signup <i class="fa fa-user-plus"
+                                        aria-hidden="true"></i>/Login <i class="fa fa-user" aria-hidden="true"></i></a>
+
+                            </div>
+
+                        </section>
+
+
+                    </section>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
     </nav>
-    <nav class="navbar navbar-expand-lg" id="navwithsearch">
-        <div class="container">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Shop by Categories</button>
-                        <div class="dropdown-content">
-                            <a href="#">Concreting and Masonry</a>
-                            <a href="#">Rebar & G.I WIres</a>
-                            <a href="#">Steel</a>
-                            <a href="#">Roofing and Insulation</a>
-                            <a href="#">WaterProofing</a>
-                            <a href="#">Sealant & Adhesives</a>
-                            <a href="#">Glassdoors & Windows</a>
-                            <a href="#">Wood Products</a>
-                            <a href="#">Drywall & Ceiling</a>
-                            <a href="#">Plumbing Pipes & Accessories</a>
-                            <a href="#">Electrical Pipes & Accessories</a>
-                            <a href="#">Wires & Cables</a>
-                            <a href="#">Tiling & Supplies</a>
-                            <a href="#">Painting Supplies</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="ms-5"><input class="form-control me-2 mt-2" type="search" placeholder="Search Products Here"
-                        aria-label="Search" />
-                </li>
-                <li><button class="btn btn-outline mt-2" type="submit">
-                        <img src="photo/searchbar.png" style="width:25px">
-                    </button></li>
-            </ul>
-            <div class="ms-5">
-                <a href="#FAQs">FAQs </a> |
-                <a href="#Tracking">Tracking</a> |
-                <a href="#">Contact us </a>
+
+    <div id="modal">
+        <div class='form-container'>
+            <div class='register'>
+                <h2 class='title register-hover'>Register</h2>
+                <form action="" class='form'>
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <p><button class='btn'>Register</button></p>
+                </form>
+            </div>
+            <div class='login ustom-shape-divider-top-1671103609'>
+
+                <h2 class='title black'>Log in</h2>
+                <form action="" class='form'>
+                    <input type="text" id="username" name="uname" placeholder="Username">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <p><button class='btn dark-btn'>Login</button></p>
             </div>
         </div>
-    </nav>
+    </div>
+
+
 
     <div class="container mt-5">
         <div class="row">
 
-            <div class="col-9"> <img src="photo/cover.png" class="img-fluid" id="home-link"></div>
+            <div class="col-lg-9"> <img src="photo/cover.png" class="img-fluid" id="home-link"></div>
 
-            <div class="col-3 mt-3" id="pSlider">
-                <h1 class="text-center">Featured Items</h1>
+            <div class="col-lg-3 mt-5" id="pSlider">
+                <h1 class="text-center" style="font-family:'roboto';">
+                </h1>
                 <ol id="slider-container" dir="ltr">
                     <li id="slide_1" class="li_slide">
                         <div class="slide-snapper"></div>
@@ -214,9 +210,53 @@
                     </tr>
                 </table>
             </div>
+            <div class="promo-wrap">
+                <div class="promo-title">
+                    <h1>On Sale</h1>
+                    <p>Until Supplies Last</p>
+                </div>
+                <div class="promo-list">
+                    <div class="promo-template">
+                        <div class="promo-image text-center">
+                            <img src="promopage/1.png" alt="Breaker" style="width: 300px;" />
+                        </div>
+                        <div class="promo-description">
+                            <span class="promo-number">01</span>
+                            <p class="promo-name">Makita AC Breaker</p>
+                            <p class="promo-price">49,000 <span>55,000</span></p>
+                            <a href="#">buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="promo-template">
+                        <div class="promo-image">
+                            <img src="promopage/2.png" alt="saw" />
+                        </div>
+                        <div class="promo-description">
+                            <span class="promo-number">02</span>
+                            <p class="promo-name">Makita AC Circular Saw</p>
+                            <p class="promo-price">7,350 <span>7,850</span></p>
+                            <a href="#">buy now</a>
+                        </div>
+                    </div>
+
+                    <div class="promo-template">
+                        <div class="promo-image text-center">
+                            <img src="promopage/3.png" alt="Hammer" style="width: 300px;" />
+                        </div>
+                        <div class="promo-description">
+                            <span class="promo-number">03</span>
+                            <p class="promo-camera">xa3</p>
+                            <p class="promo-name">Makita AC demolition Hammer</p>
+                            <p class="promo-price">16,250 <span>19,750</span></p>
+                            <a href="#">buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
-            <h1 CLASS=" mt-5 pt-5" id="shoplink">ITEM SHOP</h1>
+            <h1 CLASS=" mt-5 pt-5 text-center" id="shoplink">ITEM SHOP</h1>
             <nav class="navbar" id="shop-nav">
                 <div class="container-fluid">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="shop">
@@ -241,7 +281,7 @@
                     <img src="items/1.png" alt="library" width="180px">
                     <div class="desc">
                         <h5>GI wire</h5>
-                        <p>₱100</p>
+                        <p>₱3,100</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -249,7 +289,7 @@
                     <img src="items/2.png" alt="library" width="180px" height="145px">
                     <div class="desc">
                         <h5>Hammer drill</h5>
-                        <p>₱100</p>
+                        <p>₱10,750</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -257,7 +297,7 @@
                     <img src="items/3.png" alt="library" width="180px" height="145px">
                     <div class="desc">
                         <h5>Regular Hammer</h5>
-                        <p>₱100</p>
+                        <p>₱289</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -265,7 +305,7 @@
                     <img src="items/4.png" alt="library" width="180px" height="145px">
                     <div class="desc">
                         <h5>Spray Paint</h5>
-                        <p>₱100</p>
+                        <p>₱500</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -281,7 +321,7 @@
                     <img src="items/6.png" alt="library" width="180px">
                     <div class="desc">
                         <h5>Door knob</h5>
-                        <p>₱100</p>
+                        <p>₱300</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -289,7 +329,7 @@
                     <img src="items/7.png" alt="library" width="180px">
                     <div class="desc">
                         <h5>Angle Grinder</h5>
-                        <p>₱100</p>
+                        <p>₱800</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -297,7 +337,7 @@
                     <img src="items/8.png" alt="library" width="180px">
                     <div class="desc">
                         <h5>Ladder Fiberglass</h5>
-                        <p>₱100</p>
+                        <p>₱5,500</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -305,7 +345,7 @@
                     <img src="items/9.png" alt="library" width="180px">
                     <div class="desc">
                         <h5>Silicone Sealant</h5>
-                        <p>₱100</p>
+                        <p>₱289</p>
                     </div>
                     <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
@@ -321,7 +361,7 @@
                     <div class="pagination">
                         <a class="prev page-numbers" href="javascript:;">prev</a>
                         <span aria-current="page" class="page-numbers current">1</span>
-                        <a class="page-numbers" href="javascript:;">2</a>
+                        <a class="page-numbers" href="w">2</a>
                         <a class="page-numbers" href="javascript:;">3</a>
                         <a class="page-numbers" href="javascript:;">4</a>
                         <a class="page-numbers" href="javascript:;">5</a>
@@ -336,93 +376,148 @@
             </div>
         </div>
     </div>
-    <div class="container text-center mt-5 pt-5 mb-5 pb-5" id="Bulk-orders">
-        <h1>Bulk Orders? List your items and get the best deals online!</h1>
-        <form class="mt-5">
-            <label for="Full name">Full name*</label><br />
-            <input class="mb-3" type="text" placeholder="Enter Name" id="Full name" /><br />
-            <label for="email">Email* </label><br />
-            <input class="mb-3" type="email" placeholder="Enter Email" id="email"><br />
-            <label for="Contact number">Contact number(mobile)* </label><br />
-            <input class="mb-3" type="text" placeholder="ex. 09123456789" " id=" Contact number" /><br />
-            <label>Products/Quotations * </label><br />
-            <textarea placeholder="Orders" style=" width:700px"></textarea><br />
-            <input type="button" value="Submit"></input>
-        </form>
-        <h1 class="pt-5">Contact Us For Any Questions</h1>
-        <div class="row pt-5">
-            <div class="col-4"><strong>Contact Directly</strong></div>
-            <div class="col-4"><strong>Location</strong></div>
-            <div class="col-4"><strong>Customer Support</strong></div>
-        </div>
-        <div class="row pt-5">
-            <div class="col-4">Globe: +639957615913</div>
-            <div class="col-4">Tumbaga 1, purok4, Sariaya Quezon</div>
-            <div class="col-4">support@DickHardware.ph</div>
-            <div class="col-4">TNT: +639075995991</div>
-        </div>
-    </div>
-    <div class="promo-wrap" id="promopage">
-        <div class="container">
-            <div class="promo-title">
-                <h1>current deals</h1>
-                <p>Until Supplies Last</p>
+    <div class="container mt-5 pt-5 mb-5 pb-5" id="Bulk-orders">
+        <h1 class="text-center">Bulk Orders? </h1>
+        <p class="text-center">List your items and get the best deals online!</p>
+        <div id="form">
+            <div>
+                <form class="mt-5">
+                    <label for="Full name">Full name*</label><br />
+                    <input class="mb-3" type="text" placeholder="Enter Name" id="Full name" /><br />
+                    <label for="email">Email* </label><br />
+                    <input class="mb-3" type="email" placeholder="Enter Email" id="email"><br />
+                    <label for="Contact number">Contact number(mobile)* </label><br />
+                    <input class="mb-3" type="text" placeholder="ex. 09123456789" " id=" Contact number" /><br />
+                    <label>Products/Quotations * </label><br />
+                    <textarea placeholder="Orders" style=" width:500px; height: 300px;"></textarea><br />
+                    <input type="button" value="Submit"></input>
+                </form>
             </div>
-            <div class="promo-list">
-                <div class="promo-template">
-                    <div class="promo-image text-center">
-                        <img src="promopage/1.png" alt="Breaker" style="width: 300px;" />
-                    </div>
-                    <div class="promo-description">
-                        <span class="promo-number">01</span>
-                        <p class="promo-name">Makita AC Breaker</p>
-                        <p class="promo-price">49,000 <span>55,000</span></p>
-                        <a href="#">buy now</a>
-                    </div>
-                </div>
-
-                <div class="promo-template">
-                    <div class="promo-image">
-                        <img src="promopage/2.png" alt="saw" />
-                    </div>
-                    <div class="promo-description">
-                        <span class="promo-number">02</span>
-                        <p class="promo-name">Makita AC Circular Saw</p>
-                        <p class="promo-price">7,350 <span>7,850</span></p>
-                        <a href="#">buy now</a>
+            <img src="photo/bulk.jpg" alt="list of items" style="width:600px; margin-left: 150px;margin-top: 150px;" />
+        </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title">Contractor’s Promo</h1>
+                            <p class="card-text">Send your credentials as contractor and get a special deal everytime
+                                you order.</p>
+                            <a href="#" class="btn btn-primary text-dark">Message Us</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="promo-template">
-                    <div class="promo-image text-center">
-                        <img src="promopage/3.png" alt="xa3" style="width: 300px;" />
-                    </div>
-                    <div class="promo-description">
-                        <span class="promo-number">03</span>
-                        <p class="promo-camera">xa3</p>
-                        <p class="promo-name">Makita AC demolition Hammer</p>
-                        <p class="promo-price">16,250 <span>19,750</span></p>
-                        <a href="#">buy now</a>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title">Corporate’s Promo</h1>
+                            <p class="card-text">Send credentials of your company and get a special deal everytime you
+                                order.</p>
+                            <a href="#" class="btn btn-primary text-dark">Message Us</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div style="margin-left: 50px;">
-                <h3>We also Offer</h3>
-                <p style="color: grey;">Contractor’s Promo – Send your credentials as contractor and get a special deal
-                    everytime you order.</p>
-                <p style="color: grey;">Corporate’s Promo – Send credentials of your company and get a special deal
-                    everytime you order.</p>
-                <p style="color: grey;">Professionals Promo – Architect or Engineer? Send us your PRC id and get a
-                    special
-                    deal everytime you
-                    order.</p>
-                <p style="color: grey;">Send your credentials via Facebook Messenger here <a
-                        href="https://www.messenger.com/t/578795522295947">[Message Us]</a></p>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title">Professionals Promo</h1>
+                            <p class="card-text">Architect or Engineer? Send us your PRC id and get a special deal
+                                everytime you order.</p>
+                            <a href="#" class="btn btn-primary text-dark">Message Us</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container" id="FAQs">
-        <h1>Frequently Asked Question</h1>
+
+    <div class="container mt-5" id="aboutpage">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8"> <img src="photo/hardwareshop.png" class="img-fluid" id="home-link"></div>
+            <div class="col-lg-2"></div>
+        </div>
+        <p class="mt-5">Dick Hardware aims to become the ultimate one-stop-shop for the latest solutions in lifestyle
+            improvement. We
+            cater to a wide variety of needs including:</p>
+        <ul>
+            <li>Paint and Paint Accessories</li>
+            <li>Lawn & Garden</li>
+            <li>Plumbing</li>
+            <li>Electrical</li>
+            <li>Home Hardware</li>
+            <li>Small Appliances</li>
+            <li>Home Basics</li>
+            <li>Hand & Power Tools</li>
+
+        </ul>
+        <h1 class="text-center">Our history</h1>
+        <div class="row">
+            <div class="wrapper" style="width: 500px;height: 500px;">
+                <main class="main ">
+                    <div class="slide">
+                        <div class="portfolio img-fluid">
+                            <section class="portfolio_items">
+                                <figure class="portfolio_item">
+                                    <img src="about/0.jpg" alt="" />
+                                </figure>
+                                <figure class="portfolio_item">
+                                    <img src="about/1.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/2.jpg" alt="" />
+                                </figure>
+                                <figure class="portfolio_item">
+                                    <img src="about/3.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/4.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/5.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/6.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/7.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/8.jpg" alt="" />
+                                </figure>
+
+                                <figure class="portfolio_item">
+                                    <img src="about/9.jpg" alt="" />
+                                </figure>
+                            </section>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <div class="col-6" style="margin-top: 80px;">Dick Hardware is one of the leading hardware stores in the
+                Philippines, as it was also in
+                the United States. It opened its doors to Filipinos in 1997, at SM Southmall, Las Piñas, Metro
+                Manila.</br>
+
+                By end of 2021, ACE Hardware has grown to become one of the country’s leading home hardware chain with
+                233 ACE Hardware branches nationwide and growing, with three massive ACE Builders Centers to cater to a
+                wider variety of needs. ACE Hardware’s core product ranges can be summarized under the home improvement
+                merchandise.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container" id="FAQs" style="margin-top: 100px;">
+        <h1 class="text-center">Frequently Asked Question</h1>
         <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -502,25 +597,39 @@
             </p>
         </div>
     </div>
-    <footer class="mt-5" style="background-color: rgb(192, 188, 188);">
+    <footer class="mt-5" style="background-color: rgb(192, 188, 188);" id="footer">
         <div class="container">
-            <strong>Contact Us</strong>
-            <p class="text-center mt-5">
-                DickHardware@gmail.com | 09075995991
-            </p>
+            <h1 class="pt-5 text-center">Contact Us For Any Questions</h1>
+            <div class="row pt-3">
+                <div class="col-3"><strong>Contact Directly</strong></div>
+                <div class="col-3"><strong>Location</strong></div>
+                <div class="col-3"><strong>Customer Support</strong></div>
+                <div class="col-3"><strong>Quick Links</strong></div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-3" style="color: grey;">Globe: +639957615913</div>
+                <div class="col-3" style="color: grey;">Tumbaga 1, purok4, Sariaya Quezon</div>
+                <div class="col-3" style="color: grey;">support@DickHardware.ph</div>
+                <div class="col-3"><a href="#" style="color: grey;">Terms and Condition</a></div>
+                <div class="col-9" style="color: grey;">TNT: +639075995991</div>
+                <div class="col-3"><a href="#" style="color: grey;">Privacy Policy</a></div>
+                <div class="col-9"></div>
+                <div class="col-3"><a href="#" style="color: grey;">Delivery Options</a></div>
+                <div class="col-9"></div>
+                <div class="col-3"><a href="#" style="color: grey;">Return and Refund Policy</a></div>
+            </div>
         </div>
         <div class="row mb-5">
             <div class="text-center">
-                <a href="https://www.facebook.com/" target="_blank"><img src="fb.png" style="width: 30px" /></a>
-                <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" style="width: 30px" /></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" style="width: 30px" /></a>
-                <a href="https://www.pinterest.ph" target="_blank"><img src="pint.png" style="width: 30px" /></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" style="width: 30px" /></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" style="width: 30px" /></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.png" style="width: 30px" /></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="footer/twitter.png"
+                        style="width: 30px" /></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="footer/ig.png" style="width: 30px" /></a>
+                <a href="https://www.gooleplus.com" target="_blank"><img src="footer/g+.png" style="width: 30px" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="footer/yt.png" style="width: 30px" /></a>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
