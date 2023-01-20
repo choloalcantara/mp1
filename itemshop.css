@@ -1,0 +1,147 @@
+.products {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px 0 0 20px;
+    background-color: #fff;
+    display: inline-block;
+    transform-origin: 100% 0;
+}
+
+.products .title {
+    width: 100%;
+    height: 90px;
+    line-height: 25px;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    color: rgb(44, 25, 25);
+    margin: 0;
+    z-index: 20;
+}
+
+.products .content {
+    width: 260px;
+    height: 330px;
+    margin-left: 20px;
+    position: relative;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+
+.BOX3 {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    perspective: 600px;
+}
+
+.BOX3 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    transition: 1s;
+    animation: expand 1s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.BOX3:hover img {
+    transform: rotateY(-180deg);
+}
+
+.BOX3 p {
+    width: 100%;
+    height: 90%;
+    padding: 17px 14px;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.BOX3:hover p {
+    transform: rotateY(0deg);
+}
+
+.btn-hide2 {
+    position: absolute;
+    left: -10000px;
+}
+
+
+.products .cart {
+    text-align: center;
+    padding: 5px 10px;
+    width: 130px;
+    border-radius: 5px;
+    margin: 15px 0px 0px 90px;
+    background-color: #000;
+    cursor: pointer
+}
+
+
+.products .cart p {
+    color: rgb(255, 255, 255);
+}
+
+
+.products .cart:hover {
+    background-color: #346;
+    color: #fff;
+    transition: 1s;
+    animation: wobble 1s ease-in-out 1;
+}
+
+
+@keyframes wobble {
+    16.65% {
+        transform: translateY(8px);
+    }
+
+    33.3% {
+        transform: translateY(-6px);
+    }
+
+    49.95% {
+        transform: translateY(4px);
+    }
+
+    66.6% {
+        transform: translateY(-2px);
+    }
+
+    83.25% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

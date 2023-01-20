@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="promo.css">
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="itemshop.css">
     <title>Dick Hardware</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg sticky-top" id="navwithlogo">
         <div class="container-fluid">
-            <a class="navbar-brand ms-5" href="#"><img src="photo/banner.jpg" style="width: 170px" /></a>
+            <a class="navbar-brand ms-5" href="#"><img src="photo/banner.png" style="width: 170px" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -65,7 +66,7 @@
                         <a class="nav-link " href="#aboutpage">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled " href=" #" tabindex="-1" aria-disabled="true">Blog</a>
+                        <a class="nav-link " href="#blogscontainer">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled " href=" #" tabindex="-1" aria-disabled="true">Franchise
@@ -87,18 +88,12 @@
 
                 <div class="ms-5" style="margin-right: 150px;">
                     <section id="intro">
-
                         <section id="intro">
-
                             <div>
                                 <a href="#modal" class="button">Signup <i class="fa fa-user-plus"
                                         aria-hidden="true"></i>/Login <i class="fa fa-user" aria-hidden="true"></i></a>
-
                             </div>
-
                         </section>
-
-
                     </section>
                 </div>
             </div>
@@ -122,7 +117,7 @@
                 <form action="" class='form'>
                     <input type="text" id="username" name="uname" placeholder="Username">
                     <input type="password" id="password" name="password" placeholder="Password">
-                    <p><button class='btn dark-btn'>Login</button></p>
+                    <p><button class='btn dark-btn'><a href="#" style="color: black;">Login</a></button></p>
             </div>
         </div>
     </div>
@@ -134,7 +129,7 @@
 
             <div class="col-lg-9"> <img src="photo/cover.png" class="img-fluid" id="home-link"></div>
 
-            <div class="col-lg-3 mt-5" id="pSlider">
+            <div class="col-lg-3 mt-5 d-none d-lg-block" id="pSlider">
                 <h1 class="text-center" style="font-family:'roboto';">
                 </h1>
                 <ol id="slider-container" dir="ltr">
@@ -212,7 +207,7 @@
             </div>
             <div class="promo-wrap">
                 <div class="promo-title">
-                    <h1>On Sale</h1>
+                    <h1>HOT DEALS</h1>
                     <p>Until Supplies Last</p>
                 </div>
                 <div class="promo-list">
@@ -246,7 +241,6 @@
                         </div>
                         <div class="promo-description">
                             <span class="promo-number">03</span>
-                            <p class="promo-camera">xa3</p>
                             <p class="promo-name">Makita AC demolition Hammer</p>
                             <p class="promo-price">16,250 <span>19,750</span></p>
                             <a href="#">buy now</a>
@@ -255,127 +249,295 @@
                 </div>
             </div>
         </div>
-        <div>
-            <h1 CLASS=" mt-5 pt-5 text-center" id="shoplink">ITEM SHOP</h1>
-            <nav class="navbar" id="shop-nav">
-                <div class="container-fluid">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="shop">
-                        <li class="nav-item">
-                            <p><strong>100</strong> products found</p>
-                        </li>
-                        <li class="nav-item">
-                        </li>
-                    </ul>
-                    <select name="dropdown">
-                        <option>Sort by</option>
-                        <option value="Popularity">Sort by Popularity</option>
-                        <option value="married">Latest</option>
-                        <option value="separated">Price low to high</option>
-                        <option value="separated">Price high to low</option>
-                    </select>
-                </div>
-            </nav>
-
-            <div class="container-parent">
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/1.png" alt="library" width="180px">
-                    <div class="desc">
-                        <h5>GI wire</h5>
-                        <p>₱3,100</p>
+    </div>
+    <div class="container-fluid" id="shoplink">
+        <div class="container-parent">
+            <div class="container text-center" id="itemx">
+                <h1 CLASS="text-center">ITEM SHOP</h1>
+                <nav class="navbar" id="shop-nav">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav" id="shop">
+                            <li class="nav-item">
+                                <p><strong>120</strong> products found</p>
+                            </li>
+                            <li class="nav-item">
+                            </li>
+                        </ul>
+                        <select name="dropdown">
+                            <option>Sort by</option>
+                            <option value="Popularity">Sort by Popularity</option>
+                            <option value="married">Latest</option>
+                            <option value="separated">Price low to high</option>
+                            <option value="separated">Price high to low</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
-                </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/2.png" alt="library" width="180px" height="145px">
-                    <div class="desc">
-                        <h5>Hammer drill</h5>
-                        <p>₱10,750</p>
+                </nav>
+                <div class="products">
+                    <div class="title">
+                        <p>Micon</p>
+                        <h5>G.I. Wire</h5>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
-                </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/3.png" alt="library" width="180px" height="145px">
-                    <div class="desc">
-                        <h5>Regular Hammer</h5>
-                        <p>₱289</p>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/1.png" alt="">
+                            <p>Our premium brand MICON G.I Wires are produced by an innovative, environmental friendly,
+                                in-line hot dip galvanizing process for a superior life and smooth finish. The
+                                microstructure of MICON wire has a uniquely uniform inter-metallic layer of pure zinc
+                                which makes its corrosion resistance higher; ideal for vineyards.<br><br><br>
+                                <strong>Quantity:</strong> 1 roll <br> <strong>Price:</strong> ₱3,100
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
                 </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/4.png" alt="library" width="180px" height="145px">
-                    <div class="desc">
+                <div class="products">
+                    <div class="title">
+                        <p>Bosch</p>
+                        <h5>Hammer Drill</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/2.png" alt="">
+                            <p> So compact, so powerful – Bosch's rotary hammer now within reach. Powerful 720 W motor
+                                and 2.0 J of impact energy for effective hammer drilling in concrete (up to 22-mm
+                                diameter) Three-mode rotary hammer for hammer drilling, drilling, and chiselling –
+                                ensuring versatility and convincing results.
+                                <br><br> Price:</strong>₱10,750
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>Stanley</p>
+                        <h5>Hammer</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/3.png" alt="">
+                            <p> Offers excellent weight distribution which reduces fatigue, forged and heat-treated head
+                                for increased durability and a jacketed graphite handle add strength and durability.
+                                <br><br> Price:</strong>₱650
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>Montana Black</p>
                         <h5>Spray Paint</h5>
-                        <p>₱500</p>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
-                </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/5.png" alt="library" width="180px">
-                    <div class="desc">
-                        <h5>Measuring Tape</h5>
-                        <p>₱100</p>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/4.png" alt="">
+                            <p> EFFICIENCY, QUALITY & RELIABILITY Montana BLACK is a high-pressure Nitro-Combination
+                                based formula and is the superior can of it's class. Re-developed with 187 powerful,
+                                high covering matte finish colors that can be applied to any surface.
+                                <br><br> <strong>Size:</strong> 400ML <br> <strong>Price:</strong> ₱600
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
-                </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/6.png" alt="library" width="180px">
-                    <div class="desc">
-                        <h5>Door knob</h5>
-                        <p>₱300</p>
+                    <div class="cart">
+                        <p>Add to Cart</p>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
                 </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/7.png" alt="library" width="180px">
-                    <div class="desc">
+                <div class="products">
+                    <div class="title">
+                        <p>Stanley</p>
+                        <h5>Measuring tape</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/5.png" alt="">
+                            <p> Stanley-short tape rule has a flexible tape to measure short distances. the measuring
+                                tape is covered with metal coating. it can be easily carried in toolkit and pockets as
+                                well.
+                                <br><br> <strong>Size:</strong>8M <br> <strong>Price:</strong> ₱350
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>Corona</p>
+                        <h5>Heavy Duty Cylindrical Lock</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/6.png" alt="">
+                            <p> The CORONA brand offers a wide variety of durable and easy to use door security
+                                products. For more than two decades, architects, designers, and builders have
+                                continuously depended on the brand’s unparalleled quality and unique craftsmanship.
+                                CORONA door locks have been designed and tested to meet strict performance durability
+                                that exceeds industry standard.
+                                <br><br><strong>Price:</strong> ₱950
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>DeWALT</p>
                         <h5>Angle Grinder</h5>
-                        <p>₱800</p>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
-                </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/8.png" alt="library" width="180px">
-                    <div class="desc">
-                        <h5>Ladder Fiberglass</h5>
-                        <p>₱5,500</p>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/7.png" alt="">
+                            <p> Immerse yourself in the unmistakable scents of springtime. Our award-winning Lily Eau de
+                                Toilette has bottled the sensation, blending fragrant lily of the valley with the lush
+                                aromas of
+                                the woodlands. <br> Spray it on daily after a bath or shower to make it your signature
+                                scent.
+                                <br><br><strong>Price:</strong> ₱2,650
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
                 </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/9.png" alt="library" width="180px">
-                    <div class="desc">
+                <div class="products">
+                    <div class="title">
+                        <p>Werner</p>
+                        <h5>FibreGlass Ladder</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/8.png" alt="">
+                            <p> Lightweight, compact and adjustable height platform provides up to 9' reach; Innovative
+                                Quick Link Technology allows professionals to connect multiple platforms with no tools
+                                required for superior performance.
+                                <br><br> <strong>Size:</strong> 6FT <br> <strong>Price:</strong> ₱6,650
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>Bostik</p>
                         <h5>Silicone Sealant</h5>
-                        <p>₱289</p>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/9.png" alt="">
+                            <p> Bostik S300 SILICONE MULTI PURPOSE is a versatile acetoxy silicone sealant for sanitary
+                                and kitchen applications which cures by reacting to moisture to form a durable elastic
+                                rubber seal. The product is UV and weather resistant.
+                                <br><br> <strong>Size:</strong> 300ML<br> <strong>Price:</strong> ₱299
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
                 </div>
-                <div class="gallery me-5 btn nav__btn btn-fnt btn-color mb-3 mt-3">
-                    <img src="items/10.png" alt="library" width="180px">
-                    <div class="desc">
-                        <h5>Paint brush</h5>
-                        <p>₱100</p>
+                <div class="products">
+                    <div class="title">
+                        <p>Farrow&ball</p>
+                        <h5>Masonry brush</h5>
                     </div>
-                    <button type="submit" class="btn btn-primary text-dark">Add to cart</button>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/10.png" alt="">
+                            <p> The Farrow and Ball Masonry Brush is made from a combination of synthetic and pure
+                                bristle to give the best performance when painting more challenging exterior surfaces
+                                such as the more abrasive masonry surfaces.
+                                <br><br> <strong>Size:</strong> 60MM<br> <strong>Price:</strong> ₱199
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
                 </div>
-                <div class="pagination-wrapper">
-                    <div class="pagination">
-                        <a class="prev page-numbers" href="javascript:;">prev</a>
-                        <span aria-current="page" class="page-numbers current">1</span>
-                        <a class="page-numbers" href="w">2</a>
-                        <a class="page-numbers" href="javascript:;">3</a>
-                        <a class="page-numbers" href="javascript:;">4</a>
-                        <a class="page-numbers" href="javascript:;">5</a>
-                        <a class="page-numbers" href="javascript:;">6</a>
-                        <a class="page-numbers" href="javascript:;">7</a>
-                        <a class="page-numbers" href="javascript:;">8</a>
-                        <a class="page-numbers" href="javascript:;">9</a>
-                        <a class="page-numbers" href="javascript:;">10</a>
-                        <a class="next page-numbers" href="javascript:;">next</a>
+                <div class="products">
+                    <div class="title">
+                        <p>DeWALT</p>
+                        <h5>Hard Hat</h5>
                     </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/11.png" alt="">
+                            <p> The DEWALT Cap Style Hard Hats are comfortable and stylish, offering versatile
+                                protection. All Hard Hats Meet ANSI Z89.1-2009 Type 1 – Class G & E Standards.
+                                <br><br> <strong>Price:</strong> ₱1,299
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="title">
+                        <p>Makita</p>
+                        <h5>Circularsaw Blade</h5>
+                    </div>
+                    <div class="content">
+                        <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
+                        <div class="BOX3">
+                            <img src="items/12.png" alt="">
+                            <p>These premium Tungsten Carbide Tipped blades are precision honed and ultra-thin to ensure
+                                fast and excellent cuts every time. They can be used wood and fit most popular cordless
+                                circular saw models and all with the high quality you've come to expect from Makita.
+                                <br><br> <strong>Price:</strong> ₱2,199
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <p>Add to Cart</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination-wrapper">
+                <div class="pagination">
+                    <a class="prev page-numbers" href="javascript:;">prev</a>
+                    <span aria-current="page" class="page-numbers current">1</span>
+                    <a class="page-numbers" href="w">2</a>
+                    <a class="page-numbers" href="javascript:;">3</a>
+                    <a class="page-numbers" href="javascript:;">4</a>
+                    <a class="page-numbers" href="javascript:;">5</a>
+                    <a class="page-numbers" href="javascript:;">6</a>
+                    <a class="page-numbers" href="javascript:;">7</a>
+                    <a class="page-numbers" href="javascript:;">8</a>
+                    <a class="page-numbers" href="javascript:;">9</a>
+                    <a class="page-numbers" href="javascript:;">10</a>
+                    <a class="next page-numbers" href="javascript:;">next</a>
                 </div>
             </div>
         </div>
     </div>
+
+
     <div class="container mt-5 pt-5 mb-5 pb-5" id="Bulk-orders">
         <h1 class="text-center">Bulk Orders? </h1>
         <p class="text-center">List your items and get the best deals online!</p>
@@ -389,15 +551,19 @@
                     <label for="Contact number">Contact number(mobile)* </label><br />
                     <input class="mb-3" type="text" placeholder="ex. 09123456789" " id=" Contact number" /><br />
                     <label>Products/Quotations * </label><br />
-                    <textarea placeholder="Orders" style=" width:500px; height: 300px;"></textarea><br />
+                    <textarea class="d-none d-lg-block" placeholder="Orders"
+                        style=" width:500px; height: 300px;"></textarea><br />
+                    <textarea class="d-block d-sm-none" placeholder="Orders"
+                        style=" width:300px; height: 200px;"></textarea>
                     <input type="button" value="Submit"></input>
                 </form>
             </div>
-            <img src="photo/bulk.jpg" alt="list of items" style="width:600px; margin-left: 150px;margin-top: 150px;" />
+            <img class="d-none d-lg-block d-lg-none d-xl-block" src="photo/bulk.jpg" alt="list of items"
+                style="width:600px; margin-left: 150px;margin-top: 150px;" />
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <img src="photo/contractor.jpg" class="card-img-top" alt="...">
                     <div class="card">
                         <div class="card-body">
@@ -408,7 +574,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <img src="photo/company.jpg" style="height: 269px;" class="card-img-top" alt="...">
                     <div class="card">
                         <div class="card-body">
@@ -419,7 +585,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-3">
                     <img src="photo/architech.webp" class="card-img-top" alt="...">
                     <div class="card">
                         <div class="card-body">
@@ -454,9 +620,9 @@
             <li>Hand & Power Tools</li>
 
         </ul>
-        <h1 class="text-center">Our history</h1>
-        <div class="row">
-            <div class="wrapper" style="width: 500px;height: 500px;">
+        <h1 class="text-center mb-5">Our history</h1>
+        <div>
+            <div class="wrapper d-none d-lg-block" style="width: 500px;height: 500px;margin-left: 400px;">
                 <main class="main ">
                     <div class="slide">
                         <div class="portfolio img-fluid">
@@ -504,10 +670,11 @@
                 </main>
             </div>
 
-            <div class="col-6" style="margin-top: 80px;">Dick Hardware is one of the leading hardware stores in the
+            <div>Dick Hardware is one of the leading hardware stores
+                in the
                 Philippines, as it was also in
                 the United States. It opened its doors to Filipinos in 1997, at SM Southmall, Las Piñas, Metro
-                Manila.</br>
+                Manila.
 
                 By end of 2021, dick Hardware has grown to become one of the country’s leading home hardware chain with
                 233 dick Hardware branches nationwide and growing, with three massive Builders Centers to cater to a
@@ -518,7 +685,35 @@
         </div>
 
     </div>
+    <div class="container mt-5" id="blogscontainer">
+        <h1 class=" text-center mb-5">Recent Blogs</h1>
+        <div class="avatar">
+            <img src="photo/jiggs.jpg" alt="jiggs" />
+            </a>
+        </div>
+        <div class="content">
+            <h5><a href="#">Federal Construction Contracting Blog</a></h5>
+            <p>January 23, 2023 by Jiggs Bonafe</p>
 
+        </div>
+        <div class="avatar">
+            <img src="photo/daiben.jpg" alt="angelo" />
+            </a>
+        </div>
+        <div class="content">
+            <h5><a href="#">Construction Business Owner</a></h5>
+            <p>January 23, 2023 by Daiben Sanchez</p>
+        </div>
+        <div class="avatar">
+            <img src="photo/cha.jpg" alt="himiko" />
+            </a>
+        </div>
+        <div class="content">
+            <h5><a href="#">Levelset’s Construction Payment Blog</a></h5>
+            <p>January 23, 2023 by Charmaine David</p>
+        </div>
+
+    </div>
     <div class="container" id="FAQs" style="margin-top: 100px;">
         <h1 class="text-center">Frequently Asked Question</h1>
         <div class="accordion accordion-flush" id="accordionExample">
@@ -601,10 +796,10 @@
         </div>
     </div>
     <hr>
-    <footer class="container-fluid mt-3" id="footer">
+    <footer class="container mt-3" id="footer">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-3">
+
+            <div class="col-lg-4">
                 <table>
                     <tr>
                         <td><img src="photo/diamond.png" style="width: 50px;"></td>
@@ -612,7 +807,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <table>
                     <tr>
                         <td><img src="photo/van.png" style="width:60px;"></td>
@@ -620,7 +815,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <table>
                     <tr>
                         <td><img src="photo/CARD.png" style="width: 60px;"></td>
@@ -629,35 +824,61 @@
                 </table>
             </div>
         </div>
-        <div class="container">
+        <div class="container d-none d-lg-block">
             <h1 class="pt-5 text-center">Contact Us For Any Questions</h1>
             <div class="row pt-3">
-                <div class="col-3"><strong>Contact Directly</strong></div>
-                <div class="col-3"><strong>Location</strong></div>
-                <div class="col-3"><strong>Customer Support</strong></div>
-                <div class="col-3"><strong>Quick Links</strong></div>
+                <div class="col-4"><strong>Contact Directly</strong></div>
+                <div class="col-4"><strong>Location</strong></div>
+                <div class="col-4"><strong>Customer Support</strong></div>
+                <div class="col-4" style="color: grey;">Globe: +639957615913</div>
+                <div class="col-4" style="color: grey;">Tumbaga 1, purok4, Sariaya Quezon</div>
+                <div class="col-4" style="color: grey;">support@DickHardware.ph</div>
+                <div class="col-4" style="color: grey;">TNT: +639075995991</div>
             </div>
             <div class="row pt-3">
-                <div class="col-3" style="color: grey;">Globe: +639957615913</div>
-                <div class="col-3" style="color: grey;">Tumbaga 1, purok4, Sariaya Quezon</div>
-                <div class="col-3" style="color: grey;">support@DickHardware.ph</div>
-                <div class="col-3"><a href="#" style="color: grey;">Terms and Condition</a></div>
-                <div class="col-9" style="color: grey;">TNT: +639075995991</div>
-                <div class="col-3"><a href="#" style="color: grey;">Privacy Policy</a></div>
-                <div class="col-9"></div>
-                <div class="col-3"><a href="#" style="color: grey;">Delivery Options</a></div>
-                <div class="col-9"></div>
-                <div class="col-3"><a href="#" style="color: grey;">Return and Refund Policy</a></div>
+                <div class="col-4"><strong>Quick Links</strong></div>
+                <div class="col-8"><strong>Our Socials</strong></div>
+                <div class="col-4"><a href="#" style="color: grey;">Terms and Condition</a></div>
+                <div class="col-8">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.png"
+                            style="width: 30px" /></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="footer/twitter.png"
+                            style="width: 30px" /></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="footer/ig.png"
+                            style="width: 30px" /></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="footer/yt.png"
+                            style="width: 30px" /></a>
+                </div>
+                <div class="col-12"><a href="#" style="color: grey;">Privacy Policy</a></div>
+                <div class="col-12"><a href="#" style="color: grey;">Delivery Options</a></div>
+                <div class="col-12"><a href="#" style="color: grey;">Return and Refund Policy</a></div>
             </div>
         </div>
-        <div>
-            <div class="text-center">
+        <div class="container d-block d-sm-none">
+            <h1 class="pt-5 text-center">Contact Us For Any Questions</h1>
+
+            <div><strong>Contact Directly</strong></div>
+            <div style="color: grey;">Globe: +639957615913</div>
+            <div style="color: grey;">TNT: +639075995991</div>
+            <div><strong>Location</strong></div>
+            <div style="color: grey;">Tumbaga 1, purok4, Sariaya Quezon</div>
+            <div><strong>Customer Support</strong></div>
+            <div style="color: grey;">support@DickHardware.ph</div>
+            <div class="col-4"><strong>Quick Links</strong></div>
+            <div class="col-4"><a href="#" style="color: grey;">Terms and Condition</a></div>
+            <div class="col-12"><a href="#" style="color: grey;">Privacy Policy</a></div>
+            <div class="col-12"><a href="#" style="color: grey;">Delivery Options</a></div>
+            <div class="col-12"><a href="#" style="color: grey;">Return and Refund Policy</a></div>
+            <div class="col-8"><strong>Our Socials</strong></div>
+            <div class="col-8">
                 <a href="https://www.facebook.com/" target="_blank"><img src="footer/fb.png" style="width: 30px" /></a>
                 <a href="https://www.twitter.com/" target="_blank"><img src="footer/twitter.png"
                         style="width: 30px" /></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="footer/ig.png" style="width: 30px" /></a>
                 <a href="https://www.youtube.com/" target="_blank"><img src="footer/yt.png" style="width: 30px" /></a>
             </div>
+
+
         </div>
     </footer>
 </body>
