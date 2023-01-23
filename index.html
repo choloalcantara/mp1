@@ -17,10 +17,51 @@
     <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="itemshop.css">
+    <link rel="stylesheet" href="tae.css">
     <title>Dick Hardware</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        (function () {
+            const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "01/30/",
+                sale = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > sale) {
+                sale = dayMonth + nextYear;
+            }
+
+            const countDown = new Date(sale).getTime(),
+                x = setInterval(function () {
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                        document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                        document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                        document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    if (distance < 0) {
+                        document.getElementById("headline").innerText = "Hot deals";
+                        document.getElementById("countdown").style.display = "none";
+                        document.getElementById("content").style.display = "block";
+                        clearInterval(x);
+                    }
+                }, 0)
+        }());
+    </script>
     <nav class="navbar navbar-expand-lg sticky-top" id="navwithlogo">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="#"><img src="photo/banner.png" style="width: 170px" /></a>
@@ -206,10 +247,22 @@
                 </table>
             </div>
             <div class="promo-wrap">
-                <div class="promo-title">
+
+
+                <div class="container timer mt-5">
                     <h1>HOT DEALS</h1>
-                    <p>Until Supplies Last</p>
+
+                    <div id="countdown">
+                        <ul>
+                            <li class="mt-5">Offer Ends in</li>
+                            <li id="timer"><span id="days"></span>days</li>
+                            <li id="timer"><span id="hours"></span>Hours</li>
+                            <li id="timer"><span id="minutes"></span>Minutes</li>
+                            <li id="timer"><span id="seconds"></span>Seconds</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="promo-list">
                     <div class="promo-template">
                         <div class="promo-image text-center">
@@ -404,11 +457,10 @@
                         <input type="radio" name="xxx2" class="btn-hide2" id="p1" checked="true">
                         <div class="BOX3">
                             <img src="items/7.png" alt="">
-                            <p> Immerse yourself in the unmistakable scents of springtime. Our award-winning Lily Eau de
-                                Toilette has bottled the sensation, blending fragrant lily of the valley with the lush
-                                aromas of
-                                the woodlands. <br> Spray it on daily after a bath or shower to make it your signature
-                                scent.
+                            <p> 710W, 10,000 rpm provides high power and speed for 100mm grinding applications. Advanced
+                                fan system provides maximum airflow prolonging motor life. Sealed toggle switch provides
+                                protection from dust and filings extending switch life. Tool-free adjustable guard
+                                allows easy positioning for left or right handed use.
                                 <br><br><strong>Price:</strong> ₱2,650
                             </p>
                         </div>
